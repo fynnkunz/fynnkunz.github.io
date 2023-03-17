@@ -1,7 +1,7 @@
-import * as THREE from 'three';
+import * as THREE from './three';
 import './style.css'
-import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
-import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer'
+import { GLTFLoader} from './three/examples/jsm/loaders/GLTFLoader'
+import { CSS2DRenderer, CSS2DObject } from './three/examples/jsm/renderers/CSS2DRenderer'
 
 //Scene
 const scene = new THREE.Scene();
