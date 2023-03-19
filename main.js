@@ -10,7 +10,7 @@ scene.background = new THREE.Color( 0x8c8c8c );
 //GLTFLoader
 const loader = new GLTFLoader()
 
-loader.load( './gltf/desk.gltf', function ( gltf ) {
+loader.load( './assets/desk.gltf', function ( gltf ) {
 
 	scene.add( gltf.scene );
   gltf.scene.position.x = 0.4
