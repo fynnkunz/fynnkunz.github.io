@@ -1,0 +1,115 @@
+/*remove white margin around canvas*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body,html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.webgl{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#topbar{
+  background: #070141;
+  z-index: 2;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  font-family:'Source Code Pro', monospace;
+}
+
+#logo{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 2cm;
+}
+
+nav #navigate{
+  font-size: 1rem;
+  text-decoration: none;
+  color:  #00ffa3;
+  font-weight: bold;
+  position: absolute;
+  top: 8mm;
+  left: 22mm;
+}
+
+nav #portfolio{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #00ffa3;
+  font-weight: bold;
+  position: absolute;
+  top: 8mm;
+  left: 95mm;
+}
+
+#x{
+  background: transparent;
+  border: transparent;
+  size: 22mm;
+  position: absolute;
+  top: 0.05mm;
+  right: 1mm;
+}
+
+#ximg{
+  width: 22mm;
+}
+
+.hover:hover{
+  filter: drop-shadow(0 0 1em #00ffa3);
+}
+
+.mobileShow{ display: none;}
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){ 
+    .mobileShow {
+      display: inline;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; overflow: hidden;
+    }
+    #mobilelogo{
+      position: absolute;
+      left: 0%;
+      top: 50%;
+      width: 10cm;
+      transform: translateY(-50%);
+    }
+    #mobilep{
+      position: absolute;
+      bottom: 20%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    #mobilep0{
+      color: red;
+      font-weight: bold;
+      font-size: larger;
+    }
+    #mobilep1{
+      color: red;
+    }
+}
+
+.mobileHide{ display: inline; }
+
+/* Smartphone Portrait and Landscape */
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px){
+   .mobileHide { display: none;}
+}
