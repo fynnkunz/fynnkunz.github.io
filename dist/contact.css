@@ -1,0 +1,105 @@
+html,body{
+  background-color: #070141;
+}
+
+#logo{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 2cm;
+}
+
+.logo{
+  transition: transform .2s ease-in;
+}
+  
+.logo:hover{
+  transform: rotate(50deg);
+}
+
+#x{
+  background: transparent;
+  border: transparent;
+  size: 22mm;
+  position: absolute;
+  top: 0.05mm;
+  right: 1mm;
+}
+  
+#ximg{
+  width: 22mm;
+}
+  
+.hover:hover{
+  filter: drop-shadow(0 0 1em #00ffa3);
+}
+
+#social{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#github, img{
+  width: 20mm;
+}
+
+#form{
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #070141;
+}
+
+h1{
+  color: #00ffa3;
+  font-size: 4vh;
+}
+
+input{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: #00ffa3;
+  border-radius: 5px;
+  border-width: 1px;
+  background: #070141;
+  color: #00ffa3;
+  width: 40vw;
+  font-size: 30px;
+}
+
+textarea{
+  border-color: #00ffa3;
+  border-radius: 5px;
+  border-width: 1px;
+  resize: none;
+  background: #070141;
+  color: #00ffa3;
+  font-size: 20px;
+  width: 40vw;
+}
+
+.button{
+  border-color: #00ffa3;
+  border-radius: 20px;
+  padding: 15px 50px;
+  background-color: #070141;
+  color: #00ffa3;
+  font-size: 25px;
+}
+
+.button:hover{
+  filter: drop-shadow(0 0 0.5em #ffffff);
+}
+
+::-webkit-input-placeholder{
+  color: #00ffa3;
+  font-size: 20px;
+}
