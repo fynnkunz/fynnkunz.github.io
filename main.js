@@ -1,7 +1,7 @@
-import * as THREE from 'three';
+import * as THREE from './node_modules/three';
 import './style.css'
-import { GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
-import { CSS2DRenderer, CSS2DObject } from 'three/examples/jsm/renderers/CSS2DRenderer'
+import { GLTFLoader} from './node_modules/three/examples/jsm/loaders/GLTFLoader'
+import { CSS2DRenderer, CSS2DObject } from './node_modules/three/examples/jsm/renderers/CSS2DRenderer'
 
 //Scene
 const scene = new THREE.Scene();
@@ -10,7 +10,7 @@ scene.background = new THREE.Color( 0x8c8c8c );
 //GLTFLoader
 const loader = new GLTFLoader()
 
-loader.load( './assets/desk.gltf', function ( gltf ) {
+loader.load( './gltf/desk.gltf', function ( gltf ) {
 
 	scene.add( gltf.scene );
   gltf.scene.position.x = 0.4
